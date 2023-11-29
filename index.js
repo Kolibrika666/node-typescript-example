@@ -1,6 +1,7 @@
 function isPrime(num) {
   for (i = 2; i < num; i++) {
-    return num % i === 0 ? false : true;
+    if (num % i === 0) return false;
   }
+  return false;
 }
 console.log(isPrime(7));
